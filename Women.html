@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="logo">
+          <img src="logo.jpg" style="width: 100px;" >
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <!-- Products Category Dropdown -->
+            <div class="dropdown">
+                <a href="#">Products</a>
+                <div class="dropdown-content">
+                    <a href="Products.html">Men</a>
+                    <a href="#">Women</a>
+                    <a href="BabyKids.html">Baby & Kids</a>
+                </div>
+            </div>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <img src="facebook.png" >
+            <img src="instagram.png" >
+            <img src="twitter.png" >
+        </div>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <img src="C:\Users\Darshan\Desktop\Paarsh_New\Darshan _Sonavane_task7\Product_Image\6th.webp" alt="Featured Products">
+        <div class="banner-text">
+            <h1>Our Best-Selling Products</h1>
+            <p>Explore top-rated and featured items!</p>
+        </div>
+    </div>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <!-- Product Images -->
+        <div class="product-images">
+            <img id="main-image" src="C:\Users\Darshan\Desktop\Paarsh_New\Darshan _Sonavane_task7\Product_Image\Thumbnail31.jfif" alt="Main Product">
+            <div class="image-list">
+                <img src="C:\Users\Darshan\Desktop\Paarsh_New\Darshan _Sonavane_task7\Product_Image\Main Product 3.jfif" alt="Thumbnail " onclick="updateImage(this)">
+                <img src="C:\Users\Darshan\Desktop\Paarsh_New\Darshan _Sonavane_task7\Product_Image\Thumbnail32.jfif" alt="Thumbnail 2" onclick="updateImage(this)">
+                <img src="C:\Users\Darshan\Desktop\Paarsh_New\Darshan _Sonavane_task7\Product_Image\Thumbnail33.jfif" alt="Thumbnail 3" onclick="updateImage(this)">
+                <img src="C:\Users\Darshan\Desktop\Paarsh_New\Darshan _Sonavane_task7\Product_Image\Thumbnail4.jfif" alt="Thumbnail 4" onclick="updateImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Information -->
+        <div class="product-info">
+            <h1>Time Vault Men Flynn Brown Watch </h1>
+            <p class="price">&#8377;5999</p>
+            <p class="description">
+                This is a detailed description of the product. Highlight the features, usage, and benefits to
+                attract customers. Include important details to help them make a purchase decision.
+            </p>
+            <div class="add-to-cart">
+                <input type="number" min="1" max="10" value="1" id="quantity">
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- JavaScript to handle image updates and cart functionality -->
+    <script>
+        function updateImage(thumbnail) {
+            const mainImage = document.getElementById('main-image');
+            mainImage.src = thumbnail.src;
+        }
+
+        function addToCart() {
+            const quantity = document.getElementById('quantity').value;
+            alert(`Added ${quantity} items to your cart!`);
+        }
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-item">
+            <h3>Company</h3>
+            <p> <img src="logo.jpg" style="width: 200px;" ></p>
+        </div>
+        <div class="footer-item" id="contact">
+            <h3>Contact</h3>
+            <p>123 Nashik, Maharashtra</p>
+            <p>Phone: +91 7972857953</p>
+            <p>Email: timevault16@gmail.com</p>
+        </div>
+        <div class="footer-item">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <img src="facebook.png" >
+                <img src="instagram.png" >
+                <img src="twitter.png" >
+            </div>
+        </div>
+        <div style=" margin-left:600px;">&copy; 2024 Darshan Sonavane. All rights reserved.</div>
+    </footer>
+
+</body>
+</html>
