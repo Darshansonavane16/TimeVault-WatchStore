@@ -6,7 +6,7 @@
     <title>Time Vault | Home</title>
     <link rel="stylesheet" href="Style.css">
     <style>
-        /* Products Section Layout */
+        /* Products Section */
         .products {
             display: flex;
             justify-content: space-around;
@@ -63,7 +63,7 @@
             text-decoration: underline;
         }
 
-        /* Centering adjustment for footer copyright notice */
+        /* Centering rule for the footer bottom text */
         .footer-bottom {
             text-align: center;
             margin-top: 20px;
@@ -73,29 +73,34 @@
 </head>
 <body>
 
+    <!-- Navbar Section -->
     <div class="navbar">
         <div class="logo">
-            <img src="logo.jpg" style="width: 100px;" alt="Time Vault Logo">
+          <img src="logo.jpg" style="width: 100px;" alt="Time Vault Logo">
         </div>
         <div class="navbar-links">
             <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
 
+            <!-- Products Dropdown -->
             <div class="dropdown">
                 <a href="#">Products</a>
                 <div class="dropdown-content">
                     <a href="Products.html">Men</a>
-                    <a href="Women.html">Women</a>
+                    <a href="#">Women</a>
                     <a href="#">Baby & Kids</a>
                 </div>
             </div>
-            <a href="#contact">Contact Us</a>
-            <a href="/login-register">Login/Register</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Login/Register</a>
         </div>
         
+        <!-- Search Bar -->
         <div class="search-bar">
             <input type="text" placeholder="Search...">
         </div>
         
+        <!-- Social Media Icons -->
         <div class="social-icons">
             <img src="facebook.png" alt="Facebook">
             <img src="instagram.png" alt="Instagram">
@@ -103,6 +108,7 @@
         </div>
     </div>
 
+    <!-- Banner Section -->
     <div class="banner">
         <img src="Index_Image/Untitled.webp" alt="Featured Products">
         <div class="banner-text">
@@ -111,15 +117,18 @@
         </div>
     </div>
 
+    <!-- Products Section -->
     <section class="products">
+        <!-- Product Card 1 -->
         <div class="product-card">
             <img src="Index_Image/1st.jfif" alt="Product 1">
             <h3>Time Vault DA-6 Analogue Watch</h3>
-            <p class="price">&#8377;2000</p>
+            <p class="price"> &#8377;2000</p>
             <p class="description">This is a great product. Perfect for everyday use. Get yours today!</p>
-            <a href="/product-page-1" class="read-more">Read More</a>
+            <a href="#" class="read-more">Read More</a>
         </div>
 
+        <!-- Product Card 2 (Linked to Details Page) -->
         <div class="product-card">
             <img src="Index_Image/2nd.jfif" alt="Product 2">
             <h3>Time Vault Men Flynn Brown Watch</h3>
@@ -128,27 +137,30 @@
             <a href="product-details.html" class="read-more">Read More</a>
         </div>
 
+        <!-- Product Card 3 -->
         <div class="product-card">
             <img src="Index_Image/3rd.jfif" alt="Product 3">
             <h3>Time Vault watch for men</h3>
             <p class="price">&#8377;3000</p>
             <p class="description">An amazing product that solves your daily needs. Order now!</p>
-            <a href="/product-page-3" class="read-more">Read More</a>
+            <a href="#" class="read-more">Read More</a>
         </div>
 
+        <!-- Product Card 4 -->
         <div class="product-card">
             <img src="Index_Image/4th.jfif" alt="Product 4">
-            <h3>Time Vault Digital Watch</h3>
+            <h3> Time Vault Digital Watch</h3>
             <p class="price">&#8377;5999</p>
             <p class="description">An excellent product with great reviews. Get yours today!</p>
-            <a href="/product-page-4" class="read-more">Read More</a>
+            <a href="#" class="read-more">Read More</a>
         </div>
     </section>
-
-    <footer class="footer">
+    
+    <!-- Footer Section -->
+     <footer class="footer">
         <div class="footer-item">
             <h3>Company</h3>
-            <p><img src="logo.jpg" style="width: 200px;" alt="Time Vault Logo"></p>
+            <p> <img src="logo.jpg" style="width: 200px;" alt="Time Vault Logo"></p>
         </div>
         <div class="footer-item" id="contact">
             <h3>Contact</h3>
@@ -156,6 +168,7 @@
             <p>Phone: +91 7972857953</p>
             <p>Email: timevault16@gmail.com</p>
         </div>
+        
         <div class="footer-item">
             <h3>Follow Us</h3>
             <div class="social-icons">
@@ -164,9 +177,7 @@
                 <img src="twitter.png" alt="Twitter">
             </div>
         </div>
-        <div class="footer-bottom">
-            &copy; 2026 Darshan Sonavane. All rights reserved.
-        </div>
+        <div class="footer-bottom">&copy; 2026 Darshan Sonavane. All rights reserved.</div>
     </footer>
 
 </body>
